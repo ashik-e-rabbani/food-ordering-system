@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/orderlistTextview"
+        android:layout_width="250dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textColor="#ea7a66"
+        android:textSize="40dp"
+        android:layout_gravity="center"
+        android:layout_height="250dp"
+        android:layout_weight="1"
+        android:text="Ordered List" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+
+
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="40dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/orderDetailstextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="fill_horizontal"
+            android:hint="Please choose items from menu."
+            android:textColor="#f79625bc"
+            android:textSize="25sp"
+
+            />
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="140dp">
+
+        <TextView
+            android:id="@+id/showprice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/bg"
+            android:layout_gravity="center"
+            android:layout_marginRight="0dp"
+            android:layout_weight="1"
+            android:hint="Cost"
+            android:padding="5dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#ea7b67"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/listen"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@+id/price_total_textView"
+                android:textColor="#fff"
+                android:layout_weight="1"
+                android:background="#ea7a66"
+                android:onClick="confirm"
+                android:text="Listen" />
+
+            <Button
+                android:id="@+id/call"
+
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#3a8fc1"
+                android:layout_below="@+id/price_total_textView"
+                android:layout_toRightOf="@id/listen"
+                android:textColor="#fff"
+                android:layout_weight="1"
+                android:onClick="call"
+                android:text="Call" />
+            <Button
+                android:id="@+id/sms"
+
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textColor="#fff"
+                android:layout_below="@+id/price_total_textView"
+                android:layout_weight="1"
+                android:background="#ea7a66"
+                android:onClick="sms"
+                android:text="SMS" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
