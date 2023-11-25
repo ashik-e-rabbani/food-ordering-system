@@ -1,0 +1,2 @@
+# food-ordering-system
+Develop a restaurant menu android application. Which will contain two activities one will be named as Menu &amp; another one will be named as Your order. The Menu activity will contain some food item names &amp; their prices. The user can select food items from the Menu. When they place to order the Your order activity will show their order list &amp; the total bill of their order in taka &amp; also converted into US dollar.
